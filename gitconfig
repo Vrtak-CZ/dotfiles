@@ -3,6 +3,7 @@
 	email = patrik@votocek.cz
 [core]
 	editor = vim
+	excludesfile = /home/vrtak-cz/.gitignore
 [merge]
 	tool = vimdiff
 [color]
