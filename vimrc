@@ -15,46 +15,11 @@ runtime! archlinux.vim
 " and configure vim to your own liking!
 
 set nocompatible
+set nobackup
+set nowritebackup
+set noswapfile
 
-set background=dark 
-
-" Syntax
-syntax enable
+filetype plugin on
 syntax on
 
-" Encoding
-set encoding=utf8
-
-" Line numbering
-set number
-hi LineNr term=NONE cterm=NONE ctermbg=NONE ctermfg=white gui=NONE guifg=darkgrey guibg=NONE
-
-"current line a column
-set cursorline cursorcolumn
-hi CursorLine term=NONE cterm=NONE ctermbg=darkgrey ctermfg=NONE gui=NONE guibg=darkgrey guifg=NONE
-hi CursorColumn term=NONE cterm=NONE ctermbg=darkgrey ctermfg=NONE gui=NONE guibg=darkgrey guifg=NONE
-
-
-" Formatting
-set tabstop=4
-set autoindent
-
-" Searching
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
-
-" Case only matters with mixed case expressions
-set ignorecase
-set smartcase
-
-" Show other possibilites at tab completion
-set wildmenu
-
-"custom file type
-au BufNewFile,BufRead *.phtml set filetype=smarty
-au BufNewFile,BufRead *.latte set filetype=smarty
-au BufNewFile,BufRead *.neon set filetype=yaml
-au BufNewFile,BufRead nginx.conf set filetype=nginx
-
+set background=dark
