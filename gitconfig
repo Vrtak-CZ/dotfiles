@@ -2,15 +2,18 @@
 	name = Patrik Votocek
 	email = patrik@votocek.cz
 [core]
-	editor = vim
 	excludesfile = /home/vrtak-cz/.gitignore
+	editor = vim
+[color]
+	ui = true
+	branch = true
+	diff = true
+	interactive = true
+	status = true
+[diff]
+	tool = vimdiff
 [merge]
 	tool = vimdiff
-[color]
-	status = auto
-	branch = auto
-	interactive = auto
-	diff = auto
 [github]
 	user = Vrtak-CZ
 [format]

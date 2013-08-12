@@ -6,7 +6,7 @@
 CONF_VHOSTS_DIR="/etc/nginx/vhosts"
 CONF_VHOST_SKEL="/etc/nginx/vhost.skel"
 CONF_HOSTS_FILE="/etc/hosts"
-CONF_SERVER_DAEMON="/etc/rc.d/nginx"
+CONF_SERVER_SERVICE="nginx"
 CONF_SERVER_RELOAD="reload"
 CONF_IP="127.0.0.1"
 
@@ -56,7 +56,7 @@ then
 		echo "${CONF_IP} ${VHOST_DOMAINS}" >> "${CONF_HOSTS_FILE}"
 
 		echo "Reloading server"
-		echo `$CONF_SERVER_DAEMON $CONF_SERVER_RELOAD`
+		echo `systemctl $CONF_SERVER_RELOAD $CONF_SERVER_SERVICE`
 	fi
 else
 	cat <<EOF
