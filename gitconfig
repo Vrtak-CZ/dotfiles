@@ -4,6 +4,8 @@
 [core]
 	excludesfile = /home/vrtak-cz/.gitignore
 	editor = vim
+	autocrlf = input
+        safacrlf = false
 [color]
 	ui = true
 	branch = true
