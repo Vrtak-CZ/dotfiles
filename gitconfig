@@ -1,22 +1,28 @@
 [user]
 	name = Patrik Votocek
 	email = patrik@votocek.cz
+	signingkey = 13443642BFF2770A
 [core]
-	excludesfile = /home/vrtak-cz/.gitignore
-	editor = vim
-	autocrlf = input
-        safacrlf = false
+	editor = nvim
+	excludesfile = ~/.gitignore
+[diff]
+	tool = nvim -d
+[difftool]
+	prompt = false
+[push]
+	followTags = true
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[init]
+	defaultBranch = main
 [color]
 	ui = true
 	branch = true
 	diff = true
 	interactive = true
 	status = true
-[diff]
-	tool = vimdiff
-[merge]
-	tool = vimdiff
-[github]
-	user = Vrtak-CZ
 [format]
 	pretty = oneline

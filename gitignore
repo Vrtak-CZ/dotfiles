@@ -3,3 +3,6 @@
 nbproject
 ehthumbs.db
 Thumbs.db
+.vscode
+.env
+*.local.tfvar
